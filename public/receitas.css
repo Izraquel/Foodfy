@@ -1,0 +1,180 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  border: 0;
+  padding: 0;
+}
+
+body {
+  /* margin: 20px; */
+  font-family: "Roboto", sans-serif;
+}
+
+header {
+  max-width: 940px;
+  display: flex;
+  margin: 20px auto;
+  margin-bottom: 20px;
+}
+
+header img {
+  margin-right: 30px;
+  margin-bottom: 20px;
+}
+
+.navegation {
+  margin-left: 20px;
+}
+
+.navegation a {
+  color: #111111;
+  font-size: 16px;
+  line-height: 26px;
+  text-decoration: none;
+  margin: 15px;
+}
+
+/*==== CARDS ====*/
+.grid-cards {
+  max-width: 940px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px;
+  cursor: pointer;
+}
+.card img {
+  width: 100%;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.card info h3 {
+  font-size: 18px;
+  line-height: 21px;
+}
+.card info p {
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.info h3 {
+  padding-top: 18px;
+  /* font-weight: 600; */
+  font-size: 18px;
+  color: #111111;
+  line-height: 21px;
+}
+.info p {
+  font-size: 14px;
+  color: #777777;
+  line-height: 16px;
+  padding-top: 5px;
+}
+
+footer {
+  width: 1400;
+  margin: 30px 0 0 0;
+  display: grid;
+  padding: 20px;
+  background: #eeeeee;
+}
+footer span {
+  font-size: 14px;
+  color: #999999;
+  text-align: center;
+}
+
+/* ===== MODAL OVERLAY ===== */
+.modal-overlay {
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+
+  opacity: 0;
+  visibility: hidden;
+}
+.modal {
+  background-color: white;
+  width: 660px;
+  height: 413px;
+  margin: 20vh auto;
+  position: relative;
+  border-radius: 16px;
+}
+.modal .close-modal {
+  color: black;
+  position: absolute;
+  right: 8px;
+  top: 8px;
+  cursor: pointer;
+}
+
+.modal .maximize-modal {
+  color: black;
+  position: absolute;
+  right: 46px;
+  top: 16px;
+  cursor: pointer;
+}
+
+/* ===== MODAL.ACTIVE ===== */
+.modal-overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal-overlay.maximize .modal {
+  width: 100%;
+  height: 100%;
+}
+
+iframe {
+  width: 100%;
+  height: 90%;
+  position: absolute;
+  top: 5vh;
+}
+
+/* ===== Close MODAL  ===== */
+.modal {
+  text-align: center;
+}
+
+.modal a {
+  text-decoration: none;
+  color: #999999;
+  font-size: 16px;
+  line-height: 19px;
+
+  position: absolute;
+  top: 364px;
+  left: 281px;
+  right: 281px;
+}
+
+/*===== MODAL IMG ======*/
+.content img {
+  border-radius: 15px;
+  /* padding-top: 30px;  */
+
+  width: 600px;
+  height: 200px;
+  margin: 0;
+}
+
+.content .info h3 {
+  font-size: 24px;
+  color: #111111;
+  font-weight: 400;
+  line-height: 28px;
+
+  padding-bottom: 5px;
+}
+.content .info p {
+  font-size: 18px;
+  line-height: 21px;
+  margin: 0 auto;
+}
